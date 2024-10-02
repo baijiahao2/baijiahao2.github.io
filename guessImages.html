@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,9 +37,9 @@
 }
 </style>
 <script>
-var images=["images/friendshipBear.jpg","images/basketBear.jpg","images/gentlemanBear.jpg","images/ladyBear.jpg",
-"images/panda.jpg","images/snowBear.jpg"];
-var nameOfImages=["friendshipBear","basketBear","gentlemanBear","ladyBear","panda","snowBear"];
+var images=["images/Baseball.jpg","images/Basketball.jpg","images/Bowling.jpg","images/PingPong.jpg",
+"images/Soccer.jpg","images/Tennis.jpg"];
+var nameOfImages=["Baseball","Basketball","Bowling","PingPong","Soccer","Tennis"];
 var counter=[0,0,0,0,0,0];
 var targetIndex;
 var timer1,timer2;
@@ -93,17 +94,16 @@ function checkAnswer(){
 <div id="clue"></div>
 <div id="imageDiv">
 <ul>
-<li><img src="images/friendshipBear.jpg" title="friendshipBear"/><p>FriendShipBear</p></li>
-<li><img src="images/basketBear.jpg" title="basketBear"/><p>basketBear</p></li>
-<li><img src="images/gentlemanBear.jpg" title="gentlemanBear" /><p>gentlemanBear</p></li>
-<li><img src="images/ladyBear.jpg" title="ladyBear" /><p>ladyBear</p></li>
-<li><img src="images/panda.jpg" title="panda" /><p>panda</p></li>
-<li><img src="images/snowBear.jpg" title="snowBear" /><p>snowBear</p></li>
+<li><img src="images/Baseball.jpg" title="Baseball"/><p>Baseball</p></li>
+<li><img src="images/Basketball.jpg" title="Basketball"/><p>Basketball</p></li>
+<li><img src="images/Bowling.jpg" title="Bowling" /><p>Bowling</p></li>
+<li><img src="images/PingPong.jpg" title="PingPong" /><p>PingPong</p></li>
+<li><img src="images/Soccer.jpg" title="Soccer" /><p>Soccer</p></li>
+<li><img src="images/Tennis.jpg" title="Tennis" /><p>Tennis</p></li>
 </ul>
 </div>
 <img id="theImage" src="images/blank.png" alt=""/>
 <input type="button" value="Start" onclick="startGame();"/>
-<input type="button" value="Back" onclick="window.location.href='index.html';"/>
 <div id="question"><p>How many times did you see the <span id="targetPic"></span>?</p>
 <p>Your answer: <input type="number" id="answer" value="0" size="1"/>
 	<input type="button" value="check" onclick="checkAnswer();"></p>
